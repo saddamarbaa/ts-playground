@@ -25,6 +25,9 @@ export const filter = <V>(arr: V[], cb: (v: V, i: number) => boolean): V[] => {
   return output;
 };
 
+// argument
+// array of type generic
+// callback function
 export const map = <V, N = V>(arr: V[], cb: (v: V, i: number) => N): N[] => {
   const output: N[] = [];
   for (let i = 0; i < arr.length; i++) {
